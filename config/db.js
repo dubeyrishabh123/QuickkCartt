@@ -26,6 +26,7 @@ async function connectDB()
            )
         }
         cached.conn=await cached.promise
+        console.log("✅ MongoDB Connected Successfully!");
         return cached.conn
 }
 
